@@ -1,35 +1,33 @@
 elem > .[navbar horizontal-scroll]
-    elt > .[item active] > Summary
-    elt > .[item] > Meal Tracker
-    elt > .[item] > View Data
-    elt > .[item] > Profile
+    img > images/logo.png > .[logo]
+    elt > .[title] > Health-E
 </>
 
-elt > .[section-label] > Today's Consumption
+elt > .[section-label] > Nutrition Summary
 elem > .[nutrient-summary horizontal-scroll]
 
-    elem > .[item big]
-        elt > .[title] > Calories
+    elem > .[item]
+        elt > .[title] #[summ_val_cal] > Calories
         elt > .[value] > 1200
     </>
 
     elem > .[item]
-        elt > .[title] > Protein
+        elt > .[title] #[summ_val_protein] > Protein
         elt > .[value] > 102g
     </>
 
     elem > .[item]
-        elt > .[title] > Carbs
-        elt > .[value] > 209g
-    </>
-
-    elem > .[item]
-        elt > .[title] > Fat
+        elt > .[title] #[summ_val_fat] > Fat
         elt > .[value] > 52g
     </>
 
     elem > .[item]
-        elt > .[title] > Sugar
+        elt > .[title] #[summ_val_carb] > Carbohydrates
+        elt > .[value] > 209g
+    </>
+
+    elem > .[item]
+        elt > .[title] #[summ_val_sugar] > Sugar
         elt > .[value] > 40g
     </>
 
@@ -39,28 +37,28 @@ elt > .[section-label] > Recommended Intake
 elem > .[list-display]
     elem > .[item]
         elt > .[left] > Calories
-        elt > .[right] > 2190
-        elt > .[status] style[width:40%;background:rgb(120,50,150)] > 
+        elt > .[right] > 2190cal
+        elt > .[status] style[width:40%;background:rgb(150,0,0)] > 
     </>
     elem > .[item]
         elt > .[left] > Protein
         elt > .[right] > 129g
-        elt > .[status] style[width:60%;background:rgb(150,0,0);] > 
+        elt > .[status] style[width:60%;background:rgb(200,50,0)] > 
     </>
     elem > .[item]
         elt > .[left] > Fat
         elt > .[right] > 60g
-        elt > .[status] style[width:30%;background:rgb(200,150,0)] > 
+        elt > .[status] style[width:30%;background:rgb(180,150,0)] > 
     </>
     elem > .[item]
-        elt > .[left] > Saturated Fat
-        elt > .[right] > < 27g
+        elt > .[left] > Carbohydrates
+        elt > .[right] > 90g
         elt > .[status] style[width:70%;background:rgb(100,150,100)] > 
     </>
     elem > .[item]
         elt > .[left] > Sugar
         elt > .[right] > < 62g
-        elt > .[status] style[width:40%;background:rgb(100,100,200)] > 
+        elt > .[status] style[width:40%;background:rgb(20,50,200)] > 
     </>
 </>
 

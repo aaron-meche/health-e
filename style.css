@@ -4,9 +4,9 @@
 }
 
 :root{
-    --bg-color: rgb(14, 2, 35);
-    --front-color: rgb(70,10,100);
-    --pop-color: darkslateblue;
+    --bg-color: rgb(12, 4, 58);
+    --pop-color: rgb(86, 66, 189);
+    --accent-color: rgb(199, 116, 240);
 }
 
 body{
@@ -29,25 +29,24 @@ body{
 /* Navbar */
 
 .navbar{
-    padding: 7pt;
+    padding: 10pt;
     background: var(--bg-color);
     position: sticky;
     top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2pt var(--pop-color);
 }
 
-.navbar .item{
-    display: inline-block;
-    padding: 7pt;
-    margin: 0 3pt;
-    border-radius: 7pt;
-    color: lightgray;
-    font-size: 12pt;
-    font-weight: 500;
+.navbar .logo{
+    height: 30pt;
+    margin-right: 5pt;
 }
 
-.navbar .item.active{
-    color: white;
-    background-color: var(--pop-color);
+.navbar .title{
+    font-size: 15pt;
+    font-weight: 600;
+    color: var(--accent-color)
 }
 
 /* Section Division */
@@ -55,7 +54,9 @@ body{
 .section-label{
     font-size: 15pt;
     font-weight: 600;
-    padding: 25pt 0 10pt 0;
+    padding: 10pt 0;
+    margin: 0 20pt;
+    margin-top: 30pt;
     text-align: center;
 }
 
@@ -68,8 +69,9 @@ body{
 
 .nutrient-summary .item{
     display: inline-block;
-    padding: 20pt 35pt;
-    margin: 0 5pt;
+    width: 70vw;
+    padding: 20pt 0;
+    margin: 0 7pt;
     background: var(--pop-color);
     color: white;
     border-radius: inherit;

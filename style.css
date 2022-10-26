@@ -1,0 +1,128 @@
+@font-face {
+    font-family: BaileyScript;
+    src: url('BaileyScript/BaileyScript.ttf');
+}
+
+:root{
+    --bg-color: rgb(14, 2, 35);
+    --front-color: rgb(70,10,100);
+    --pop-color: darkslateblue;
+}
+
+body{
+    margin: 0;
+    background: var(--bg-color);
+    color: white;
+
+    font-family: BaileyScript;
+}
+
+.horizontal-scroll{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar */
+
+.navbar{
+    padding: 7pt;
+    background: var(--bg-color);
+    position: sticky;
+    top: 0;
+}
+
+.navbar .item{
+    display: inline-block;
+    padding: 7pt;
+    margin: 0 3pt;
+    border-radius: 7pt;
+    color: lightgray;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.navbar .item.active{
+    color: white;
+    background-color: var(--pop-color);
+}
+
+/* Section Division */
+
+.section-label{
+    font-size: 15pt;
+    font-weight: 600;
+    padding: 25pt 0 10pt 0;
+    text-align: center;
+}
+
+/* Nutrient Summary */
+
+.nutrient-summary{
+    padding: 10pt 15pt;
+    border-radius: 10pt;
+}
+
+.nutrient-summary .item{
+    display: inline-block;
+    padding: 20pt 35pt;
+    margin: 0 5pt;
+    background: var(--pop-color);
+    color: white;
+    border-radius: inherit;
+    text-align: center;
+}
+
+.nutrient-summary .item .title{
+    font-size: 20pt;
+    font-weight: 200;
+}
+
+.nutrient-summary .item .value{
+    font-size: 35pt;
+    font-weight: 600;
+}
+
+/* List */
+
+.list-display{
+    margin: 10pt 20pt;
+}
+
+.list-display .item{
+    padding: 10pt;
+    margin: 5pt 0;
+    position: relative;
+    font-size: 13pt;
+    font-weight: 500;
+    border-radius: 10pt;
+}
+
+.list-display .item .left{
+    max-width: 70%;
+}
+
+.list-display .item .right{
+    height: 100%;
+    max-width: calc(30% - 10pt);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 10pt;
+}
+
+.list-display .item .status{
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
